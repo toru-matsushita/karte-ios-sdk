@@ -15,7 +15,12 @@
 //
 
 #import "KRTTracker+RemoteNotification.h"
+
+#if __has_include(<KarteRemoteNotification/KarteRemoteNotification-Swift.h>)
 #import <KarteRemoteNotification/KarteRemoteNotification-Swift.h>
+#else
+#import "KarteRemoteNotification-Swift.h"
+#endif
 
 @implementation KRTTracker (RemoteNotification)
 
